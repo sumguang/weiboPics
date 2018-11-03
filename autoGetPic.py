@@ -43,7 +43,7 @@ class CrawelPic:
     
         user=self.browser.find_element_by_id("loginName")
         pwd=self.browser.find_element_by_id("loginPassword")
-        user.send_keys(self.username=username)
+        user.send_keys(self.username)
         
         pwd.send_keys(self.password)
 
@@ -131,9 +131,9 @@ if __name__ == "__main__":
     
     #initUrl="https://weibo.cn/comment/H0Q0BivZE?uid=5998187176&rl=0#cmtfrm"
     #热门图片
-    #initUrl="https://weibo.cn/comment/hot/H0Q0BivZE?rl=1"
-    initUrl="https://weibo.cn/comment/hot/H0Q0BivZE?rl=1&page=41"
-    yao.num=270
+    initUrl="https://weibo.cn/comment/hot/H0Q0BivZE?rl=1"
+   
+    yao.num=1
     while(True):
         
         time.sleep(random.randint(10,20))
@@ -153,11 +153,6 @@ if __name__ == "__main__":
             break
     
             
-
-    
-    #browser.get("http://photo.weibo.com/h5/comment/compic_id/1022:230597edf2bb618605af855a4b638cd27e38b3")
-    
-    #getPics(x,1,browser)
 
 
 
