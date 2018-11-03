@@ -30,8 +30,10 @@ def browser_proxy():
 
 class CrawelPic:
     def __init__(self,username,password):
-        #self.browser= webdriver.Chrome()
-        self.browser=browser_proxy()
+        self.browser= webdriver.Chrome()
+        
+        #设置代理访问，xx-net
+        #self.browser=browser_proxy()
         self.num=1
         self.username=username
         self.password=password
